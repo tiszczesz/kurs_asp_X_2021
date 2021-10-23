@@ -12,6 +12,7 @@ namespace cw1
     {
         // [BindProperty]
         public List<Customer> Customers { get; set; }
+        public double AgeAvg { get; set; }
        public IndexModel()
        {
            Customers = new List<Customer>{
@@ -21,10 +22,14 @@ namespace cw1
                new Customer{FirstName = "Roman",LastName = "Gałecki",Age=31},
                new Customer{FirstName = "Grażyna",LastName = "Sprężyna",Age=54}
            };
+           AgeAvg = Customers.Average(c=>c.Age);
+           
        }
 
         public void OnGet()
         {
+            ViewData["min"] = Customers.Min(c=>c.Age);
+            Customers = Customers.OrderBy(c=>c.LastName).ToList();
         }
     }
 }

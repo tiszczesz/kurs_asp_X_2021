@@ -31,8 +31,7 @@
             }
             Moje dane @imie @nazwisko wynik: @wynik
         </div>
-    </div>
-    <div>
+        <div>
         <table class="table table-bordered table-striped">
             <tr>
                 <th>Lp</th>
@@ -52,7 +51,17 @@
                 </tr>
             }
         </table>
+        <hr>
+        <h2 class="bg-secondary p-3">
+            Ilość klientów: @Model.Customers.Count <br>
+            Średnia wieku klientów: @Model.AgeAvg <br>
+            Najstarszy klient: @Model.Customers.Max(c=>c.Age) <br>
+            Najmłodszy klient @ViewData["min"]
+
+        </h2>
     </div>
+    </div>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
