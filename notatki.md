@@ -18,3 +18,18 @@ dotnet --version
 dotnet --help
 dotnet --list-sdks
 dotnet --list-runtimes
+dotnet new --help 
+```
+
+Certyfiktay dla przeglądarki:
+```cons
+dotnet dev-certs https --trust
+```
+Lista możliwych templates:
+
+```console
+dotnet new -l
+dotnet new web -o cw1 //--pusta aplikacja web
+dotnet run // -- kompilacja i uruchomienie
+```
+
