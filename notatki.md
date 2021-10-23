@@ -12,7 +12,7 @@ https://docs.microsoft.com/pl-pl/aspnet/core/?WT.mc_id=dotnet-35129-website&view
 
 https://docs.microsoft.com/en-us/aspnet/core/?WT.mc_id=dotnet-35129-website&view=aspnetcore-5.0    dokumentacja angielska
 
-1.3 dotnet
+## 1.3 dotnet
 ```console
 dotnet --version
 dotnet --help
@@ -31,5 +31,30 @@ Lista możliwych templates:
 dotnet new -l
 dotnet new web -o cw1 //--pusta aplikacja web
 dotnet run // -- kompilacja i uruchomienie
+dotnet new page -n Index
 ```
+### Dodanie obsługi plików statycznych oraz RazorPages w pliku startup.cs
+
+```csharp
+ public void ConfigureServices(IServiceCollection services)
+{
+    services.AddRazorPages();
+}
+...
+
+app.UseStaticFiles();
+app.UseEndpoints(endpoints =>
+{
+    // endpoints.MapGet("/", async context =>
+    // {
+    //     await context.Response.WriteAsync("Hello World!");
+    // });
+    // endpoints.MapGet("/nowe",async context => {
+    //     await context.Response.WriteAsync("nowy adres i to coś nowego");
+    // });
+    endpoints.MapRazorPages();
+});
+```
+
+
 
