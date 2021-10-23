@@ -27,12 +27,15 @@ namespace cw1
             }
 
             app.UseRouting();
-
+            app.UseStaticFiles();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/", async context =>
                 {
                     await context.Response.WriteAsync("Hello World!");
+                });
+                endpoints.MapGet("/nowe",async context => {
+                    await context.Response.WriteAsync("nowy adres i to coś nowego");
                 });
             });
         }
