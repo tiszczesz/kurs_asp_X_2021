@@ -11,3 +11,10 @@ https://dotnet.microsoft.com/ zasoby
 https://docs.microsoft.com/pl-pl/aspnet/core/?WT.mc_id=dotnet-35129-website&view=aspnetcore-5.0  dokumentacja polska (UWAGA)
 
 https://docs.microsoft.com/en-us/aspnet/core/?WT.mc_id=dotnet-35129-website&view=aspnetcore-5.0    dokumentacja angielska
+
+1.3 dotnet
+```console
+dotnet --version
+dotnet --help
+dotnet --list-sdks
+dotnet --list-runtimes
