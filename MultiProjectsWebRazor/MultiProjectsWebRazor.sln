@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiProjectsWebRazor.Domain", "MultiProjectsWebRazor.Domain\MultiProjectsWebRazor.Domain.csproj", "{B8324424-91F7-40BC-BB06-DD410505002D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiProjectsWebRazor.UTests", "MultiProjectsWebRazor.UTests\MultiProjectsWebRazor.UTests.csproj", "{664CD51A-9CFA-4B99-8672-550FCB9BCB8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8324424-91F7-40BC-BB06-DD410505002D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8324424-91F7-40BC-BB06-DD410505002D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8324424-91F7-40BC-BB06-DD410505002D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8324424-91F7-40BC-BB06-DD410505002D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664CD51A-9CFA-4B99-8672-550FCB9BCB8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664CD51A-9CFA-4B99-8672-550FCB9BCB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664CD51A-9CFA-4B99-8672-550FCB9BCB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664CD51A-9CFA-4B99-8672-550FCB9BCB8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17664837-83D7-48BD-B372-C326551C98F5}
+	EndGlobalSection
+EndGlobal
