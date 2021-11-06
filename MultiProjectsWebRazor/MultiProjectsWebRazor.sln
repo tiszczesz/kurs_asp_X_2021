@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiProjectsWebRazor.Domai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiProjectsWebRazor.UTests", "MultiProjectsWebRazor.UTests\MultiProjectsWebRazor.UTests.csproj", "{664CD51A-9CFA-4B99-8672-550FCB9BCB8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiProjectsWebRazor.Web", "MultiProjectsWebRazor.Web\MultiProjectsWebRazor.Web.csproj", "{B754B1BD-F90A-4695-9B0C-0450A557125D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{664CD51A-9CFA-4B99-8672-550FCB9BCB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{664CD51A-9CFA-4B99-8672-550FCB9BCB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{664CD51A-9CFA-4B99-8672-550FCB9BCB8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B754B1BD-F90A-4695-9B0C-0450A557125D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B754B1BD-F90A-4695-9B0C-0450A557125D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B754B1BD-F90A-4695-9B0C-0450A557125D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B754B1BD-F90A-4695-9B0C-0450A557125D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

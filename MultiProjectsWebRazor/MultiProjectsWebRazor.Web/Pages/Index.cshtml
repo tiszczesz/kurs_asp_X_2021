@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form asp-page="Index" method="post">
+    <div class="form-group">
+        <label asp-for="Encrypt.Key"></label>
+        <input class="form-control" asp-for="Encrypt.Key" />
+        <span class="text-danger" asp-validation-for="Encrypt.Key"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Encrypt.PlainText"></label>
+        <input class="form-control" asp-for="Encrypt.PlainText" />
+        <span class="text-danger" asp-validation-for="Encrypt.PlainText"></span>
+    </div>
+    <div class="form-group">
+        <input class="btn btn-info" type="submit" value="Koduj"/>
+    </div>
+</form>
+
+@if(ViewData["IsPost"]!=null)
+{
+    <div>
+        @ViewData["IsPost"]
+        <p class="text-info">@Model.Encrypt.EncodingText</p>
+    </div>
+}
