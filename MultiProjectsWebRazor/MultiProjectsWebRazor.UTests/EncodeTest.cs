@@ -27,7 +27,7 @@ namespace MultiProjectsWebRazor.UTests
         {
             // Arrange
             Encrypt encrypt = new Encrypt();
-            encrypt.Key = 0;
+            encrypt.Key = 1;
             encrypt.PlainText = "ala ma kota";
 
             // Act
