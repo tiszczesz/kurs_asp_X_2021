@@ -55,6 +55,9 @@ app.UseEndpoints(endpoints =>
     endpoints.MapRazorPages();
 });
 ```
-
+### Załadowanie _viewimports
+```console
+    dotnet new viewimports  // dodajemy importy do projektu aby korzystać np z tag-helperów
+```
 
 

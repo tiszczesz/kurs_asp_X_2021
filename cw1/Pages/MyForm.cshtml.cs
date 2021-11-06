@@ -11,6 +11,14 @@ namespace MyApp.Namespace
     {
         public void OnGet()
         {
+            ViewData["get"] = "Z OnGet";
+        }
+        public void OnPost(){
+            var a = Convert.ToInt32(Request.Form["a"]);
+            var b = Convert.ToInt32(Request.Form["b"]);
+            int wynik = a + b;
+            ViewData["wynik"] = wynik;
+            ViewData["post"] = "z OnPost";
         }
     }
 }
