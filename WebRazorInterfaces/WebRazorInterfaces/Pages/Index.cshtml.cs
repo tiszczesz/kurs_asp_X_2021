@@ -26,7 +26,6 @@ namespace WebRazorInterfaces.Pages
         }
 
         public void OnGet() {
-           
         }
     }
 }
