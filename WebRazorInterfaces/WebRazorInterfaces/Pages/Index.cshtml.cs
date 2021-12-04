@@ -21,12 +21,12 @@ namespace WebRazorInterfaces.Pages
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
-            _mySaveable = new FileSave();
+            _mySaveable = new RamSave();
             MyList = new Quote(_mySaveable.Load());
         }
 
         public void OnGet() {
-            ViewData["cytat"] = MyList.RandomQuote();
+           
         }
     }
 }
