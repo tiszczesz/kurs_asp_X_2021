@@ -60,4 +60,5 @@ app.UseEndpoints(endpoints =>
     dotnet new viewimports  // dodajemy importy do projektu aby korzystać np z tag-helperów
 ```
 
-
+# Aplikacje WebApi
+https://bykowski.pl/rest-api-efektywna-droga-do-zrozumienia/
