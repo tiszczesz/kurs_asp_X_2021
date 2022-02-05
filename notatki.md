@@ -62,3 +62,6 @@ app.UseEndpoints(endpoints =>
 
 # Aplikacje WebApi
 https://bykowski.pl/rest-api-efektywna-droga-do-zrozumienia/
+
+# EntityFramework
+https://docs.microsoft.com/pl-pl/ef/core/
