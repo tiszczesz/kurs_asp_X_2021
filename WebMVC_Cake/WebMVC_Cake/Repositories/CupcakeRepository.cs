@@ -1,4 +1,5 @@
-﻿using WebMVC_Cake.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using WebMVC_Cake.Data;
 using WebMVC_Cake.Models;
 
 namespace WebMVC_Cake.Repositories
@@ -10,11 +11,11 @@ namespace WebMVC_Cake.Repositories
             _context = context;
         }
         public IEnumerable<Cupcake> GetCupcakes() {
-            throw new NotImplementedException();
+            return _context.Cupcakes.ToList();
         }
 
         public Cupcake GetCupcake(int id) {
-            throw new NotImplementedException();
+            return _context.Cupcakes.Include(c=>c.Bakery).SingleOrDefault(c => c.CupcakeId == id);
         }
 
         public void CreateCupcake(Cupcake cupcake) {
@@ -34,7 +35,8 @@ namespace WebMVC_Cake.Repositories
         }
 
         public IQueryable<Bakery> PopulateBakeriesDropDownList() {
-            throw new NotImplementedException();
+            var bakeriesQuery = _context.Bakeries.OrderBy(b => b.BakeryName);
+            return bakeriesQuery;
         }
     }
 }
