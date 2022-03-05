@@ -33,7 +33,7 @@ namespace WebMVC_Cake.Models
 
         public string ImageName { get; set; }
 
-        public byte[] PhotoFile { get; set; }
+        public byte[]? PhotoFile { get; set; }
 
         public string ImageMimeType { get; set; }
 
