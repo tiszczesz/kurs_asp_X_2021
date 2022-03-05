@@ -66,6 +66,18 @@ namespace WebMVC_Cake.Data
                     ImageMimeType = "image/jpeg",
                     ImageName = "turquoise-cupcake.jpg",
                     CaloricValue = 360
+                },
+                new Cupcake
+                {
+                    CupcakeId = 5,
+                    CupcakeType = CupcakeType.Turqoise,
+                    Description = "Przepyszne ciastko",
+                    GlutenFree = true,
+                    Price = 4.5M,
+                    BakeryId = 4,
+                    ImageMimeType = "image/jpeg",
+                    ImageName = "cupcakes-cover.jpg",
+                    CaloricValue = 250
                 }
 
                 );
