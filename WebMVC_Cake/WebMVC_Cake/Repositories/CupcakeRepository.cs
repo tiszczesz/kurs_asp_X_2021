@@ -19,7 +19,19 @@ namespace WebMVC_Cake.Repositories
         }
 
         public void CreateCupcake(Cupcake cupcake) {
-            throw new NotImplementedException();
+            if (cupcake.PhotoAvatar != null && cupcake.PhotoAvatar.Length > 0)
+            {
+                cupcake.ImageMimeType = cupcake.PhotoAvatar.ContentType;
+                cupcake.ImageName = Path.GetFileName(cupcake.PhotoAvatar.FileName);
+                using (var memoryStream = new MemoryStream())
+                {
+                    cupcake.PhotoAvatar.CopyTo(memoryStream);
+                    cupcake.PhotoFile = memoryStream.ToArray();
+                }
+
+                _context.Add(cupcake);
+                _context.SaveChanges();
+            }
         }
 
         public void UpdateCupcake(Cupcake cupcake) {
